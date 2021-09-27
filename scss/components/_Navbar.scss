@@ -1,0 +1,43 @@
+.navbar {
+    @include sticky;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    height: 100vh;
+    color: $color-light;
+    background: $color-dark;
+
+    // padding: 0.5em;
+    padding: 0.5em;
+    .icon-button {
+        transition: all 0.2s ease;
+        * {
+            transition: all 0.2s ease;
+        }
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        //The icon svg
+        .icon {
+            font-size: 2.5em;
+            margin-bottom: -2px;
+        }
+        //The text
+        .route {
+            font-weight: bold;
+            color: darken($color-off-light, 10%);
+            font-size: 70%;
+            text-transform: uppercase;
+        }
+        &:hover {
+            * {
+                color: $color-off-primary !important;
+            }
+        }
+        &:not(:last-child) {
+            margin-bottom: 1em;
+        }
+    }
+}
