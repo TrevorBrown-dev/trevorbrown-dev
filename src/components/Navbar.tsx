@@ -1,3 +1,4 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
@@ -7,16 +8,21 @@ export const Navbar: React.FC = () => {
 
     return (
         <nav className="navbar">
-            {links.map(([to, name, icon], i) => (
-                <Link key={i} to={to} className='icon-button no-underline backdrop-hover'>
-                    <span className="material-icons-outlined icon">
-                        {icon}
-                    </span>
-                    <span className='route'>
-                        {name}
-                    </span>
-                </Link>
-            ))}
+            {links.map(([to, name, icon], i) => <MyLink key={i} to={to} name={name} icon={icon} />)}
         </nav>
+    );
+}
+
+const MyLink: React.FC<{ to: string, icon: string, name: string }> = ({ to, icon, name }) => {
+    const [hovering, setHovering] = useState(false);
+    return (
+        <Link to={to} className='icon-button no-underline backdrop-hover' onMouseOver={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
+            <span className={`material-icons${hovering ? '' : '-outlined '} icon`}>
+                {icon}
+            </span>
+            <span className='route'>
+                {name}
+            </span>
+        </Link>
     );
 }
