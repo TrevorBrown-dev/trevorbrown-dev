@@ -1,9 +1,9 @@
-import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export const Navbar: React.FC = () => {
     const links: Readonly<[string, string, string][]> = [
-        ['/', 'Home', 'home'], ['/about', 'About', 'visibility']
+        ['/', 'Home', 'home'], ['/about', 'About', 'visibility',],
+        ['/resume', 'Resume', 'description']
     ];
 
     return (
@@ -14,10 +14,9 @@ export const Navbar: React.FC = () => {
 }
 
 const MyLink: React.FC<{ to: string, icon: string, name: string }> = ({ to, icon, name }) => {
-    const [hovering, setHovering] = useState(false);
     return (
-        <Link to={to} className='icon-button no-underline backdrop-hover' onMouseOver={() => setHovering(true)} onMouseLeave={() => setHovering(false)}>
-            <span className={`material-icons${hovering ? '' : '-outlined '} icon`}>
+        <Link to={to} className='icon-button no-underline backdrop-hover'>
+            <span className={`material-icons-outlined icon`}>
                 {icon}
             </span>
             <span className='route'>

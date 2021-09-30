@@ -1,8 +1,8 @@
 export const Home: React.FC = () => {
     return (
-        <div className="home">
+        <main className="home">
             HOME
 
-        </div>
+        </main>
     );
 }
