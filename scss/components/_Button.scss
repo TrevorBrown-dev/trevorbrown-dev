@@ -1,0 +1,31 @@
+@mixin reset-button {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.button {
+    @include reset-button();
+    padding: 1em 2em;
+    color: $color-light;
+    background-color: $color-primary;
+    font-size: 1.5em;
+    border-radius: 3em;
+    cursor: pointer;
+
+    &-primary {
+        $shadow-color: rgba($color-light, 20%);
+        transition: all 0.1s ease-in-out;
+        box-shadow: 0 0 0 $shadow-color;
+        &:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 0 $shadow-color;
+        }
+        &:active {
+            transform: translateY(1px);
+            box-shadow: 0 0 0 $shadow-color;
+        }
+    }
+    &-secondary {
+    }
+}

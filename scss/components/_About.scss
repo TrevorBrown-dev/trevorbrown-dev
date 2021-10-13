@@ -1,0 +1,14 @@
+.about {
+    position: relative;
+    z-index: 2;
+    background-color: $color-primary;
+    min-height: 10vh;
+    height: 30vh;
+
+    h2 {
+        text-align: center;
+    }
+    p {
+        font-size: 1.6em;
+    }
+}
