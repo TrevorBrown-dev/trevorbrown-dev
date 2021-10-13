@@ -246,6 +246,11 @@ html > ::-webkit-scrollbar {
   background: #2a2a2a;
   padding: 0.5em;
 }
+@media (max-width: 1024px) {
+  .navbar {
+    display: none;
+  }
+}
 .navbar .icon-button {
   transition: all 0.2s ease;
   display: flex;
@@ -297,13 +302,14 @@ html > ::-webkit-scrollbar {
   z-index: 2;
   background-color: #ff4f7b;
   min-height: 10vh;
-  height: 30vh;
 }
 .about h2 {
   text-align: center;
+  margin-bottom: 1em;
 }
 .about p {
   font-size: 1.6em;
+  margin: 0 auto;
 }
 
 .contact {
