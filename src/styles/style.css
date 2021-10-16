@@ -296,6 +296,15 @@ html > ::-webkit-scrollbar {
 .hero-section {
   padding: 5em;
 }
+.hero-section h2 {
+  text-align: center;
+}
+.hero-section .subheader {
+  margin-top: 1em;
+  font-size: 1.3em;
+  text-align: center;
+  color: #b8b8b8;
+}
 
 .about {
   position: relative;

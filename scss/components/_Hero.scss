@@ -18,4 +18,13 @@
 
 .hero-section {
     padding: 5em;
+    h2 {
+        text-align: center;
+    }
+    .subheader {
+        margin-top: 1em;
+        font-size: 1.3em;
+        text-align: center;
+        color: $color-off-light;
+    }
 }
