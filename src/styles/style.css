@@ -309,6 +309,7 @@ html > ::-webkit-scrollbar {
 .about {
   position: relative;
   z-index: 2;
+  padding-top: 4vh;
   background-color: #ff4f7b;
   min-height: 10vh;
 }
