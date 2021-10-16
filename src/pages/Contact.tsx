@@ -1,6 +1,6 @@
 import emailjs from 'emailjs-com';
 import { ContactForm } from '../components/ContactForm';
-interface ContactInfo {
+export interface ContactInfo {
     firstName: string;
     lastName: string;
     email: string;
