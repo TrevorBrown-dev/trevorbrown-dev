@@ -2,9 +2,5 @@
     "hosting": {
         "public": "build",
         "ignore": ["firebase.json", "**/.*", "**/node_modules/**"]
-    },
-    "functions": {
-        "runtime": "nodejs14",
-        "predeploy": "npm --prefix functions run build"
     }
 }
