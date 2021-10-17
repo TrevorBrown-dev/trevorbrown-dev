@@ -18,6 +18,7 @@ export const ContactForm: React.FC = () => {
 
     return (
         <form action="POST" className="contact-form" onSubmit={handleSubmit}>
+
             <input type="text" id='firstName' name="firstName" placeholder="First Name" required />
             <input type="text" id='lastName' name="lastName" placeholder="Last Name" required />
             <input type="email" id='email' name="email" placeholder="Email" style={{ gridColumn: '1/-1' }} required />

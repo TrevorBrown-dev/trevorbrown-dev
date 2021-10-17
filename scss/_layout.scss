@@ -1,8 +1,9 @@
 .page-container {
-    display: flex;
     background-color: $color-off-dark;
     color: $color-light;
-    .page-main {
-        flex: 1;
+}
+@media (max-width: $mq-mobile-l) {
+    html {
+        font-size: 40%;
     }
 }

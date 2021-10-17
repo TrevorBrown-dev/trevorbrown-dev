@@ -201,14 +201,15 @@ h6 {
 }
 
 .page-container {
-  display: flex;
   background-color: #373737;
   color: #ebebeb;
 }
-.page-container .page-main {
-  flex: 1;
-}
 
+@media (max-width: 425px) {
+  html {
+    font-size: 40%;
+  }
+}
 /* custom scrollbar */
 html > ::-webkit-scrollbar {
   position: absolute;
@@ -336,25 +337,19 @@ html > ::-webkit-scrollbar {
   position: relative;
   z-index: 2;
   background-color: #2a2a2a;
-  min-height: 20em;
 }
 .contact .contact-form {
-  margin: 0 auto;
-  margin-top: 1em;
+  max-width: 50em;
+  margin: auto;
+  margin-top: 2em;
   display: grid;
   grid-template-columns: 50% 50%;
-  width: 50%;
   gap: 1em;
 }
 .contact .contact-form input,
 .contact .contact-form textarea {
   font-size: 1.2em;
 }
-.contact .contact-form .button {
-  width: 50%;
-  margin: 0 auto;
-}
-
 .button {
   border: none;
   outline: none;
