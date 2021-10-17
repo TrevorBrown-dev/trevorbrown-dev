@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import { App } from './App';
 import reportWebVitals from './reportWebVitals';
-import ServiceWorkerRegistration from "./serviceWorkerRegistration";
+import { register } from "./serviceWorkerRegistration";
 ReactDOM.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -13,6 +13,6 @@ ReactDOM.render(
   document.getElementById('root')
 );
 
-ServiceWorkerRegistration.register();
+register();
 reportWebVitals();
 
