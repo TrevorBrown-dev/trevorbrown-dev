@@ -14,6 +14,11 @@
     .slogan {
         margin-bottom: 1em;
     }
+    @media (max-width: $mq-laptop) {
+        .planet {
+            display: none;
+        }
+    }
     .subheader {
         margin-top: 0 !important;
         margin-bottom: 1em;
