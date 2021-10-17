@@ -10,10 +10,9 @@
         textarea {
             font-size: 1.2em;
         }
-
-        width: 40%;
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 50% 50%;
+        width: 50%;
         gap: 1em;
         .button {
             width: 50%;
