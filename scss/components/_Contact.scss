@@ -3,4 +3,21 @@
     z-index: 2;
     background-color: $color-dark;
     min-height: 20em;
+    .contact-form {
+        margin: 0 auto;
+        margin-top: 1em;
+        input,
+        textarea {
+            font-size: 1.2em;
+        }
+
+        width: 40%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1em;
+        .button {
+            width: 50%;
+            margin: 0 auto;
+        }
+    }
 }

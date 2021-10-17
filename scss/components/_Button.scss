@@ -25,6 +25,11 @@
             transform: translateY(1px);
             box-shadow: 0 0 0 $shadow-color;
         }
+
+        &:focus {
+            outline: 4px solid $color-light;
+            outline-offset: 3px;
+        }
     }
     &-secondary {
     }

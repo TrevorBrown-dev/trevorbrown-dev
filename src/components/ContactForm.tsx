@@ -1,9 +1,9 @@
+import { ContactInfo, sendContactInfo } from "../pages/Contact";
 import { ButtonPrimary } from "./ButtonPrimary";
 
 export const ContactForm: React.FC = () => {
     const handleSubmit: React.FormEventHandler<HTMLFormElement> = (e) => {
         e.preventDefault();
-
         //Gather the Form Data
         const formData = new FormData(e.currentTarget);
         const data: { [key: string]: any } = {};
@@ -13,20 +13,16 @@ export const ContactForm: React.FC = () => {
         e.currentTarget.reset();
 
         //Send the Email
-        // sendContactInfo(data as ContactInfo);
+        sendContactInfo(data as ContactInfo);
     }
 
     return (
         <form action="POST" className="contact-form" onSubmit={handleSubmit}>
-            <label htmlFor="firstName">First Name: </label>
-            <input type="text" id='firstName' name="firstName" />
-            <label htmlFor="lastName">Last Name: </label>
-            <input type="text" id='lastName' name="lastName" />
-            <label htmlFor="email">Email: </label>
-            <input type="text" id='email' name="email" />
-            <label htmlFor="message">Message: </label>
-            <textarea name="message" id="message"></textarea>
-            <ButtonPrimary type='submit'>Send!</ButtonPrimary>
+            <input type="text" id='firstName' name="firstName" placeholder="First Name" required />
+            <input type="text" id='lastName' name="lastName" placeholder="Last Name" required />
+            <input type="email" id='email' name="email" placeholder="Email" style={{ gridColumn: '1/-1' }} required />
+            <textarea name="message" id="message" placeholder="Message" style={{ gridColumn: '1/-1' }} required></textarea>
+            <ButtonPrimary type='submit' style={{ gridColumn: '1/-1' }}>Send!</ButtonPrimary>
         </form>
     );
 }

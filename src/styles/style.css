@@ -292,6 +292,11 @@ html > ::-webkit-scrollbar {
 .hero .slogan {
   margin-bottom: 1em;
 }
+.hero .subheader {
+  margin-top: 0 !important;
+  margin-bottom: 1em;
+  color: #b8b8b8;
+}
 
 .hero-section {
   padding: 5em;
@@ -328,6 +333,22 @@ html > ::-webkit-scrollbar {
   background-color: #2a2a2a;
   min-height: 20em;
 }
+.contact .contact-form {
+  margin: 0 auto;
+  margin-top: 1em;
+  width: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1em;
+}
+.contact .contact-form input,
+.contact .contact-form textarea {
+  font-size: 1.2em;
+}
+.contact .contact-form .button {
+  width: 50%;
+  margin: 0 auto;
+}
 
 .button {
   border: none;
@@ -352,6 +373,33 @@ html > ::-webkit-scrollbar {
   transform: translateY(1px);
   box-shadow: 0 0 0 rgba(235, 235, 235, 0.2);
 }
+.button-primary:focus {
+  outline: 4px solid #ebebeb;
+  outline-offset: 3px;
+}
+input,
+textarea {
+  transition: all 0.2s ease;
+  outline: none;
+  border: none;
+  color: #ebebeb;
+  background-color: transparent;
+  border: 0.2em solid #ebebeb;
+  border-radius: 10px;
+}
+input:focus,
+textarea:focus {
+  border-color: #ff4f7b;
+}
+
+textarea {
+  padding: 1em;
+}
+
+input {
+  padding: 0.5em 1em;
+}
+
 .splash {
   bottom: 0;
   position: absolute;
