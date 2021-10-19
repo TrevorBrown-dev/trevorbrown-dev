@@ -11,7 +11,7 @@ export const Footer: React.FC = () => {
                         <Firebase style={{ transform: 'scale(1.75)', marginRight: '3em' }} />
                     </a>
                     <a href="https://www.emailjs.com/">
-                        <EmailJS height="3em" width="auto" />
+                        <EmailJS height="3em" />
                     </a>
                 </div>
             </div>
