@@ -1,0 +1,15 @@
+.footer {
+    background-color: $color-off-dark;
+    color: $color-light;
+
+    padding: 5em;
+    .copyright {
+        text-align: center;
+    }
+    .logos {
+        filter: opacity(50%);
+        *:hover {
+            text-decoration: none;
+        }
+    }
+}

@@ -1,7 +1,23 @@
+import { EmailJS } from "./svg/EmailJS";
+import { Firebase } from "./svg/Firebase";
+
 export const Footer: React.FC = () => {
     return (
-        <footer>
-            This is the footer
+        <footer className="footer">
+            <div className="center-text" style={{ marginBottom: '1em' }}>
+                <span>Powered By</span> <br />
+                <div className="logos">
+                    <a href="https://firebase.google.com/">
+                        <Firebase style={{ transform: 'scale(1.75)', marginRight: '3em' }} />
+                    </a>
+                    <a href="https://www.emailjs.com/">
+                        <EmailJS height="3em" width="auto" />
+                    </a>
+                </div>
+            </div>
+            <div className="copyright">
+                &copy; {new Date().getFullYear()} &mdash; Trevor Brown
+            </div>
         </footer>
     );
 }
